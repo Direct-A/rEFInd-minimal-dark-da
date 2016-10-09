@@ -1,68 +1,81 @@
-## Minimalistic rEFInd theme
+# Minimalistic rEFInd theme
 
-##Forked for my own use. You can use it too, but at YOUR OWN RISK!
+## Forked for my own use. You can use it too, but at YOUR OWN RISK!
 
-[rEFInd](http://www.rodsbooks.com/refind/) is a simplistic boot manager for UEFI
-based systems. This is a clean and minimal theme for it.
+
+[rEFInd](http://www.rodsbooks.com/refind/) is a simplistic boot manager for UEFI based systems. This is a clean and minimal theme for it.
 
 ![rEFInd Minimalistic](http://i.imgur.com/y9dR4Qp.png)
+  
+---
 
-### Usage
+### Installation
 
- 1. Locate your refind EFI directory. This is commonly `/boot/EFI/refind`
-    though it will depend on where you mount your ESP and where rEFInd is
-    installed. `fdisk -l` and `mount` may help.
+1. Clone this git to a place where you can change the files easily. So, for example, your Documents directory.
 
- 2. Create a folder called `themes` inside it, if it doesn't already exist
+2. Find your rEFInd directory. It should be one of these:
+ * `/boot/EFI/refind`
+ * `/boot/efi/EFI/refind`
+ * `/boot/EFI/BOOT`
+ * `/boot/efi/EFI/BOOT`
+ 
+ The one used in these files is `/boot/EFI/BOOT`. If you use this theme, you probably need to change that in these files.
 
- 3. Clone this repository into the `themes` directory.
+3. Open your terminal in the directory with `README.md`.
 
- 4. To enable the theme add `include themes/rEFInd-minimal/theme.conf` at the end of
-    `refind.conf`.
+4. Do `sudo blkid` to see the PARTUUID of your root partition and change it in `put.conf`. If you don't have `intel-ucode.img` in your ESP, remove it from the options of each entry too.
 
-Here's an example menuentry configuration (from the screenshot)
+5. Make sure everything in the `put.conf` and `theme/theme.conf` files is correct for what you want (The default menu entries are disabled by default, so if you're using them, enable them).
+
+6. **MAKE SURE EVERYTHING IS RIGHT!**
+
+7. Do `su`.
+
+8. Do `cp -r theme /boot/EFI/BOOT`.
+
+9. Do `cat put.conf >> /boot/EFI/BOOT/refind.conf`.
+
+10. Do `exit`. You're done.
+
+---
+
+### Example
+
+Here's the example menuentry configuration that comes in `put.conf` (They're all disabled for safety).
 
 ```nginx
-menuentry "Arch Linux" {
-	icon /EFI/refind/themes/rEFInd-minimal/icons/os_arch.png
-	loader vmlinuz-linux
-	initrd initramfs-linux.img
-	options "rw root=UUID=dfb2919d-ff78-48db-a8a7-23f7542c343a loglevel=3"
+menuentry "Arch" {
+	icon /EFI/BOOT/theme/icons/os_arch.png
+	loader /vmlinuz-linux
+	initrd /initramfs-linux.img
+	options "root=PARTUUID=41548379-ce00-45b3-b18d-8b5ee699d3c7 rw initrd=/intel-ucode.img"
+	disabled
 }
 
-menuentry "Windows" {
-	icon /EFI/refind/themes/rEFInd-minimal/icons/os_win.png
-	loader /EFI/Microsoft/Boot/bootmgfw.efi
-}
-
-menuentry "OSX" {
-	icon /EFI/refind/themes/rEFInd-minimal/icons/os_mac.png
-	loader /EFI/Apple/Boot/bootmgfw.efi
+menuentry "Arch - CLI" {
+	icon /EFI/BOOT/theme/icons/os_arch_cli.png
+	loader /vmlinuz-linux
+	initrd /initramfs-linux.img
+	options "root=PARTUUID=41548379-ce00-45b3-b18d-8b5ee699d3c7 rw initrd=/intel-ucode.img systemd.unit=multi-user.target"
+	disabled
 }
 ```
 
 Entries that are autodetected should also show the proper icons.
 
-### Background sizes
+If you want a terminal icon in some of the entries, you have to add `_cli` just the before the dot on the icon of a menu entry, like so:
+ ```nginx
+menuentry "Arch - CLI" {
+	icon /EFI/BOOT/theme/icons/os_arch_cli.png
+```
+This doesn't work with the Mac and Windows icons.
 
-If you find the background looks blurry it may be due to the included wallpaper
-being an incorrect resolution for your monitor. You can download the [original
-high quality wallpaper][wallpaper], resize it as appropriate, and replace the
-`background.png`.
-
-You can of course also choose your own background!
+---
 
 ### Attribution
 
-The OS icons are from [Lightness for burg][icons] by [SWOriginal][icon-author].
+The original rEFInd-minimal theme is from [Evan Purkhiser][evan]. Check it out [here][minimal]. 
+This README is also based on his'.
 
-The background is [Minimalist Wallpaper][wallpaper] by
-[LeonardoAIanB][wallpaper-author]. Thank you to [Padster][padster] for locating
-it!
-
-[icons]: http://sworiginal.deviantart.com/art/Lightness-for-burg-181461810
-[icon-author]: http://sworiginal.deviantart.com/
-
-[padster]: https://github.com/theRealPadster
-[wallpaper]: http://leonardoalanb.deviantart.com/art/Minimalist-wallpaper-295519786
-[wallpaper-author]: http://leonardoalanb.deviantart.com/
+[evan]: https://github.com/EvanPurkhiser
+[minimal]: https://github.com/EvanPurkhiser/rEFInd-minimal
