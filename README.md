@@ -72,6 +72,11 @@ This doesn't work with the Mac and Windows icons.
 
 ---
 
+### TODO
+* MOAR ICONS!!!!!
+
+---
+
 ### Attribution
 
 The original rEFInd-minimal theme is from [Evan Purkhiser][evan]. Check it out [here][minimal]. 
