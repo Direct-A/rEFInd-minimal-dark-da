@@ -19,7 +19,7 @@
  * `/boot/EFI/BOOT`
  * `/boot/efi/EFI/BOOT`
  
- The one used in these files and example is `/boot/EFI/BOOT, so pay attention.
+ The one used in these files and example is `/boot/EFI/BOOT`, so pay attention.
 
 3. Open your terminal in the directory with `README.md`.
 
