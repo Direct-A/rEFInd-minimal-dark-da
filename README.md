@@ -19,7 +19,7 @@
  * `/boot/EFI/BOOT`
  * `/boot/efi/EFI/BOOT`
  
- The one used in these files is `/boot/EFI/BOOT`. If you use this theme, you probably need to change that in these files.
+ The one used in these files and example is `/boot/EFI/BOOT, so pay attention.
 
 3. Open your terminal in the directory with `README.md`.
 
