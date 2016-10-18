@@ -59,6 +59,13 @@ menuentry "Arch - CLI" {
 	options "root=PARTUUID=41548379-ce00-45b3-b18d-8b5ee699d3c7 rw initrd=/intel-ucode.img systemd.unit=multi-user.target"
 	disabled
 }
+
+menuentry "Windows 10" {
+	icon \EFI\BOOT\theme\icons\os_win.png
+	loader \EFI\Microsoft\Boot\bootmgfw.efi
+	disabled
+}
+
 ```
 
 Entries that are autodetected should also show the proper icons.
