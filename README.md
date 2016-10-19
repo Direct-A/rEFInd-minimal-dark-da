@@ -11,13 +11,15 @@
 
 ### Installation
 
-1. Clone this git to a place where you can change the files easily. So, for example, your Documents directory.
+1. Clone this git to a place where you can change the files easily. So, for example, your Downloads directory.
 
 2. Find your rEFInd directory. It should be one of these:
  * `/boot/EFI/refind`
  * `/boot/efi/EFI/refind`
  * `/boot/EFI/BOOT`
  * `/boot/efi/EFI/BOOT`
+ 
+ If yours is not in this list don't freak out, just pretend it is.
  
  The one used in these files and example is `/boot/EFI/BOOT`, so pay attention in case yours is different.
 
