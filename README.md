@@ -21,7 +21,7 @@
  
  If yours is not in this list don't freak out, just pretend it is.
  
- The one used in these files and example is `/boot/EFI/BOOT`, so pay attention in case yours is different.
+ The one used in these files and example is `/boot/EFI/refind`, so pay attention in case yours is different.
 
 3. Open your terminal in the directory with `README.md`.
 
@@ -33,9 +33,9 @@
 
 7. Do `su`.
 
-8. Do `cp -r theme /boot/EFI/BOOT`.
+8. Do `cp -r theme /boot/EFI/refind`.
 
-9. Do `cat put.conf >> /boot/EFI/BOOT/refind.conf`.
+9. Do `cat put.conf >> /boot/EFI/refind/refind.conf`.
 
 10. Do `exit`. You're done.
 
@@ -47,7 +47,7 @@ Here's the example menuentry configuration that comes in `put.conf` (They're all
 
 ```nginx
 menuentry "Arch" {
-	icon /EFI/BOOT/theme/icons/os_arch.png
+	icon /EFI/refind/theme/icons/os_arch.png
 	loader /vmlinuz-linux
 	initrd /initramfs-linux.img
 	options "root=PARTUUID=41548379-ce00-45b3-b18d-8b5ee699d3c7 rw initrd=/intel-ucode.img"
@@ -55,7 +55,7 @@ menuentry "Arch" {
 }
 
 menuentry "Arch - CLI" {
-	icon /EFI/BOOT/theme/icons/os_arch_cli.png
+	icon /EFI/refind/theme/icons/os_arch_cli.png
 	loader /vmlinuz-linux
 	initrd /initramfs-linux.img
 	options "root=PARTUUID=41548379-ce00-45b3-b18d-8b5ee699d3c7 rw initrd=/intel-ucode.img systemd.unit=multi-user.target"
@@ -63,7 +63,7 @@ menuentry "Arch - CLI" {
 }
 
 menuentry "Windows 10" {
-	icon \EFI\BOOT\theme\icons\os_win.png
+	icon \EFI\refind\theme\icons\os_win.png
 	loader \EFI\Microsoft\Boot\bootmgfw.efi
 	disabled
 }
@@ -75,7 +75,7 @@ Entries that are autodetected should also show the proper icons.
 If you want a terminal icon in some of the entries, you have to add `_cli` just the before the dot on the icon of a menu entry, like so:
  ```nginx
 menuentry "Arch - CLI" {
-	icon /EFI/BOOT/theme/icons/os_arch_cli.png
+	icon /EFI/refind/theme/icons/os_arch_cli.png
 ```
 This doesn't work with the Mac and Windows icons.
 
