@@ -72,7 +72,7 @@ menuentry "Windows 10" {
 
 Entries that are autodetected should also show the proper icons.
 
-If you want a terminal icon in some of the entries, you have to add `_cli` just the before the dot on the icon of a menu entry, like so:
+If you want a terminal icon in some of the entries, you have to add `_cli` just before the dot on the icon of a menu entry, like so:
  ```nginx
 menuentry "Arch - CLI" {
 	icon /EFI/refind/theme/icons/os_arch_cli.png
