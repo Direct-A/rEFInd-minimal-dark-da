@@ -82,7 +82,21 @@ This doesn't work with the Mac and Windows icons.
 ---
 
 ### TODO
-* MOAR ICONS!!!!!
+- [X] Windows Icon
+- [X] Mac Icon
+- [X] Arch Icon
+- [ ] Ubuntu Icon
+- [ ] Fedora Icon
+- [ ] Manjaro Icon
+- [ ] Mint Icon
+- [ ] Debian Icon
+- [ ] openSUSE Icon
+- [ ] elementary Icon
+- [ ] Antergos Icon
+- [ ] Ubuntu MATE Icon
+- [ ] Kubuntu Icon
+- [ ] Lubuntu Icon
+- [ ] Xubuntu Icon
 
 ---
 
