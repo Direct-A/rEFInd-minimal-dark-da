@@ -43,7 +43,7 @@
 
 ### Example
 
-Here's the example menuentry configuration that comes in `put.conf` (They're all disabled for safety).
+Here's the example menu entry configuration that comes in `put.conf` (They're all disabled for safety).
 
 ```nginx
 menuentry "Arch" {
@@ -114,6 +114,8 @@ This doesn't work with the Mac and Windows icons.
 |Windows|Mac|
 |:---:|:---:|
 |![Windows Logo](http://imgur.com/HXO5KP1.png)|![Mac - CLI Logo](http://imgur.com/FOL5obb.png)|
+
+If you want more icons, feel free to ask for them.
 
 ---
 
