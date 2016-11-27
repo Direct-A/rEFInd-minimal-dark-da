@@ -5,7 +5,7 @@
 
 [rEFInd](http://www.rodsbooks.com/refind/) is a simplistic boot manager for UEFI based systems. This is a clean and minimal theme for it.
 
-![rEFInd Minimalistic](http://i.imgur.com/y9dR4Qp.png)
+![rEFInd Minimalistic](http://i.imgur.com/IXOzMVM.png)
   
 ---
 
@@ -81,22 +81,39 @@ This doesn't work with the Mac and Windows icons.
 
 ---
 
-### TODO
-- [X] Windows Icon
-- [X] Mac Icon
-- [X] Arch Icon
-- [ ] Ubuntu Icon
-- [ ] Fedora Icon
-- [ ] Manjaro Icon
-- [ ] Mint Icon
-- [ ] Debian Icon
-- [ ] openSUSE Icon
-- [ ] elementary Icon
-- [ ] Antergos Icon
-- [ ] Ubuntu MATE Icon
-- [ ] Kubuntu Icon
-- [ ] Lubuntu Icon
-- [ ] Xubuntu Icon
+### Icons
+
+|Antergos|Antergos - CLI|Arch|Arch - CLI|
+|:---:|:---:|:---:|:---:|
+|![Antergos Logo](http://imgur.com/xurqQVh.png)|![Antergos - CLI Logo](http://imgur.com/1lo1P3A.png)|![Arch Logo](http://imgur.com/ViYuPHe.png)|![Arch - CLI Logo](http://imgur.com/YkoEbrN.png)|
+
+|Debian|Debian - CLI|elementary|elementary - CLI|
+|:---:|:---:|:---:|:---:|
+|![Debian Logo](http://imgur.com/CESYc0M.png)|![Debian - CLI Logo](http://imgur.com/kyEB7Zj.png)|![elementary Logo](http://imgur.com/zecQ18v.png)|![elementary - CLI Logo](http://imgur.com/78LOw0K.png)|
+
+|Fedora|Fedora - CLI|Kubuntu|Kubuntu - CLI|
+|:---:|:---:|:---:|:---:|
+|![Fedora Logo](http://imgur.com/yr108gd.png)|![Fedora - CLI Logo](http://imgur.com/O3k9Ar7.png)|![Kubuntu Logo](http://imgur.com/xqw1nem.png)|![Kubuntu - CLI Logo](http://imgur.com/0N93ZzX.png)|
+
+|Linux Mint|Linux Mint - CLI|Lubuntu|Lubuntu - CLI|
+|:---:|:---:|:---:|:---:|
+|![Linux Mint Logo](http://imgur.com/bLsUq9a.png)|![Linux Mint - CLI Logo](http://imgur.com/CK6bTJb.png)|![Lubuntu Logo](http://imgur.com/SdJOJ46.png)|![Lubuntu - CLI Logo](http://imgur.com/sYAPg5P.png)|
+
+|Manjaro|Manjaro - CLI|openSUSE|openSUSE - CLI|
+|:---:|:---:|:---:|:---:|
+|![Manjaro Logo](http://imgur.com/POFpb8s.png)|![Manjaro - CLI Logo](http://imgur.com/g5biRjX.png)|![openSUSE Logo](http://imgur.com/p9aVJmK.png)|![openSUSE - CLI Logo](http://imgur.com/jrRrT1n.png)|
+
+|Ubuntu|Ubuntu - CLI|Ubuntu GNOME|Ubuntu GNOME - CLI|
+|:---:|:---:|:---:|:---:|
+|![Ubuntu Logo](http://imgur.com/M7HoZ33.png)|![Ubuntu - CLI Logo](http://imgur.com/ZFrjPBE.png)|![Ubuntu GNOME Logo](http://imgur.com/TmXBMUv.png)|![Ubuntu GNOME - CLI Logo](http://imgur.com/QqJw57c.png)|
+
+|Ubuntu MATE|Ubuntu MATE - CLI|Xubuntu|Xubuntu - CLI|
+|:---:|:---:|:---:|:---:|
+|![Ubuntu MATE Logo](http://imgur.com/XXnXdt1.png)|![Ubuntu MATE - CLI Logo](http://imgur.com/JhJ1fiy.png)|![Xubuntu Logo](http://imgur.com/0yDVCIh.png)|![Xubuntu - CLI Logo](http://imgur.com/m8mswX8.png)|
+
+|Windows|Mac|
+|:---:|:---:|
+|![Windows Logo](http://imgur.com/HXO5KP1.png)|![Mac - CLI Logo](http://imgur.com/FOL5obb.png)|
 
 ---
 
