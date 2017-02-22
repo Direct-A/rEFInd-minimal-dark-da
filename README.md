@@ -1,9 +1,9 @@
-# Minimalistic rEFInd theme
+# Minimalistic Dark rEFInd Theme
 
 ## Forked for my own use. You can use it too, but at YOUR OWN RISK!
 
 
-[rEFInd](http://www.rodsbooks.com/refind/) is a simplistic boot manager for UEFI based systems. This is a clean and minimal theme for it.
+[rEFInd](http://www.rodsbooks.com/refind/) is a simplistic boot manager for UEFI based systems. This is a dark, clean, minimal theme for it.
 
 ![rEFInd Minimalistic](http://i.imgur.com/IXOzMVM.png)
   
