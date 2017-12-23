@@ -50,7 +50,7 @@ menuentry "Arch" {
 	icon /EFI/refind/theme/icons/os_arch.png
 	loader /vmlinuz-linux
 	initrd /initramfs-linux.img
-	options "root=PARTUUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx rw initrd=/intel-ucode.img quiet loglevel=3"
+	options "resume=PARTUUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX root=PARTUUID=YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY rw initrd=/intel-ucode.img quiet loglevel=3"
 	disabled
 }
 
@@ -58,7 +58,7 @@ menuentry "Arch - CLI" {
 	icon /EFI/refind/theme/icons/os_arch_cli.png
 	loader /vmlinuz-linux
 	initrd /initramfs-linux.img
-	options "root=PARTUUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx rw initrd=/intel-ucode.img systemd.unit=multi-user.target"
+	options "resume=PARTUUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX root=PARTUUID=YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY rw initrd=/intel-ucode.img systemd.unit=multi-user.target"
 	disabled
 }
 
@@ -67,7 +67,6 @@ menuentry "Windows 10" {
 	loader \EFI\Microsoft\Boot\bootmgfw.efi
 	disabled
 }
-
 ```
 
 Entries that are autodetected should also show the proper icons.
