@@ -63,8 +63,8 @@ menuentry "Arch - CLI" {
 }
 
 menuentry "Windows 10" {
-	icon \EFI\refind\theme\icons\os_win.png
-	loader \EFI\Microsoft\Boot\bootmgfw.efi
+	icon /EFI/refind/theme/icons/os_win.png
+	loader /EFI/Microsoft/Boot/bootmgfw.efi
 	disabled
 }
 ```
